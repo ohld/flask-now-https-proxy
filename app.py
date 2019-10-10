@@ -5,7 +5,7 @@ from flask import Flask
 from requests import get
 
 app = Flask(__name__)
-SITE_NAME = 'https://socket.gramup.me/'
+SITE_NAME = 'http://socket.gramup.me/'
 
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
